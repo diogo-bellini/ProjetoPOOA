@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.sql.Time;
 
 public class Prescricao{
+    private int id;
     private String medicamento;
     private String dosagem;
     private String frequencia;

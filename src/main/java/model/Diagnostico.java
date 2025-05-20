@@ -3,6 +3,7 @@ package model;
 import java.util.List;
 
 public class Diagnostico{
+    private int id;
     private String descricao;
     private Consulta consulta;
     private List<Prescricao> prescricoes;
