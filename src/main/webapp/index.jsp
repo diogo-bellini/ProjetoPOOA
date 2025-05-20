@@ -15,6 +15,7 @@
     <input type="password" id="senha" name="senha" required><br><br>
 
     <input type="submit" value="Entrar">
+    <a href="registrar.jsp">Registrar-se</a>
 </form>
 </body>
 </html>
