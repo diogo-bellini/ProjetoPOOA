@@ -5,7 +5,7 @@
     <title>Registro de Usuário</title>
 </head>
 <body>
-<h2>Registrar novo usuário</h2>
+<h2>Registrar</h2>
 
 <form action="registro" method="post">
     <label for="nome">Nome:</label><br>
