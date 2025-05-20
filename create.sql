@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS sistema_consultas;
+USE sistema_consultas;
+
 CREATE TABLE Usuario (
                          id INT AUTO_INCREMENT PRIMARY KEY,
                          nome VARCHAR(256) NOT NULL,
