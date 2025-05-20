@@ -12,6 +12,16 @@ public class Consulta {
     private Medico medico;
     private Diagnostico diagnostico;
 
+    public Consulta(int id, Date data, Time hora, String status, Paciente paciente, Medico medico, Diagnostico diagnostico) {
+        this.id = id;
+        this.data = data;
+        this.hora = hora;
+        this.status = status;
+        this.paciente = paciente;
+        this.medico = medico;
+        this.diagnostico = diagnostico;
+    }
+
     public int getId() {
         return id;
     }

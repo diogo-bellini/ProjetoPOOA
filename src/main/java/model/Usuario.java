@@ -7,6 +7,14 @@ public abstract class Usuario {
     private String senha;
     private String papel;
 
+    public Usuario(int id, String nome, String email, String senha, String papel) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.papel = papel;
+    }
+
     public int getId() {
         return id;
     }

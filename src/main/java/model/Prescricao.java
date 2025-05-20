@@ -12,7 +12,14 @@ public class Prescricao{
     private Time hora;
     private Diagnostico diagnostico;
 
-    public Prescricao() {
+    public Prescricao(int id, String medicamento, String dosagem, String frequencia, Date data, Time hora, Diagnostico diagnostico) {
+        this.id = id;
+        this.medicamento = medicamento;
+        this.dosagem = dosagem;
+        this.frequencia = frequencia;
+        this.data = data;
+        this.hora = hora;
+        this.diagnostico = diagnostico;
     }
 
     public String getMedicamento() {

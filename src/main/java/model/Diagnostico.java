@@ -8,6 +8,13 @@ public class Diagnostico{
     private Consulta consulta;
     private List<Prescricao> prescricoes;
 
+    public Diagnostico(int id, String descricao, Consulta consulta, List<Prescricao> prescricoes) {
+        this.id = id;
+        this.descricao = descricao;
+        this.consulta = consulta;
+        this.prescricoes = prescricoes;
+    }
+
     public String getDescricao() {
         return descricao;
     }
