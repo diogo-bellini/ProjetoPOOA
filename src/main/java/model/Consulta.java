@@ -7,12 +7,12 @@ public class Consulta {
     private int id;
     private Date data;
     private Time hora;
-    private String status;
+    private Status status;
     private Paciente paciente;
     private Medico medico;
     private Diagnostico diagnostico;
 
-    public Consulta(int id, Date data, Time hora, String status, Paciente paciente, Medico medico, Diagnostico diagnostico) {
+    public Consulta(int id, Date data, Time hora, Status status, Paciente paciente, Medico medico, Diagnostico diagnostico) {
         this.id = id;
         this.data = data;
         this.hora = hora;
@@ -46,11 +46,11 @@ public class Consulta {
         this.hora = hora;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 

@@ -1,9 +1,8 @@
 package model;
 
-public enum Papel {
-    MEDICO,
-    PACIENTE,
-    ADMIN;
+public enum Status {
+    CONFIRMADA,
+    PENDENTE;
 
     public static Papel fromString(String papel) {
         return Papel.valueOf(papel.toUpperCase());
