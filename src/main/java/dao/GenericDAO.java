@@ -15,7 +15,7 @@ abstract public class GenericDAO {
     }
 
     public Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/sistema_consultas?useSSL=false&serverTimezone=UTC";
+        String url = "jdbc:mysql://127.0.0.1:3306/sistema_consultas";
         String user = "root";
         String password = "root";
 
@@ -25,7 +25,7 @@ abstract public class GenericDAO {
 
 class TesteConexao {
     public static void main(String[] args) {
-        GenericDAO dao = new GenericDAO() {}; // instancia anônima, pois GenericDAO é abstrata
+        GenericDAO dao = new GenericDAO() {};
         try (Connection conn = dao.getConnection()) {
             if (conn != null && !conn.isClosed()) {
                 System.out.println("Conexão bem-sucedida!");
