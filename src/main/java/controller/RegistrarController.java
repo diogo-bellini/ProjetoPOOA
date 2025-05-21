@@ -22,12 +22,20 @@ public class RegistrarController extends HttpServlet {
         String papel = req.getParameter("papel");
         String especialidade = req.getParameter("especialidade");
 
+        System.out.println(">>>> Registrando novo usuário...");
+        System.out.println("nome: " + req.getParameter("nome"));
+        System.out.println("email: " + req.getParameter("email"));
+        System.out.println("senha: " + req.getParameter("senha"));
+        System.out.println("papel: " + req.getParameter("papel"));
+        System.out.println("especialidade: " + req.getParameter("especialidade"));
+
+
         boolean sucesso = registrarService.registrarUsuario(nome, email, senha, papel, especialidade);
 
         if (sucesso) {
-            resp.sendRedirect("index.jsp?msg=Cadastro realizado com sucesso!");
+            resp.sendRedirect("index.jsp");
         } else {
-            resp.sendRedirect("registrar.jsp?error=Erro ao cadastrar usuário");
+            resp.sendRedirect("registrar.jsp");
         }
     }
 }

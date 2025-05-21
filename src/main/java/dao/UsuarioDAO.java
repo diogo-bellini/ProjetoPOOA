@@ -92,7 +92,8 @@ public class UsuarioDAO extends GenericDAO {
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getEmail());
             stmt.setString(3, usuario.getSenha());
-            stmt.setString(4, usuario.getPapel().name());
+            stmt.setString(4, usuario.getPapel().toDatabaseValue());
+
 
             if (usuario instanceof Medico) {
                 stmt.setString(5, ((Medico) usuario).getEspecialidade());

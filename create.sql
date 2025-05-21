@@ -7,7 +7,7 @@ CREATE TABLE Usuario (
                          email VARCHAR(256) NOT NULL UNIQUE,
                          senha VARCHAR(100) NOT NULL,
                          papel ENUM('Paciente', 'Medico', 'Admin') NOT NULL,
-                         especialidade VARCHAR(100) NULLABLE, -- Apenas para Médicos
+                         especialidade VARCHAR(100), -- Apenas para Médicos
 
                          CHECK (
                              (papel = 'Medico' AND especialidade IS NOT NULL) OR
