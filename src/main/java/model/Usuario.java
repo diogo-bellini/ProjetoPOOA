@@ -5,9 +5,9 @@ public abstract class Usuario {
     private String nome;
     private String email;
     private String senha;
-    private String papel;
+    private Papel papel;
 
-    public Usuario(int id, String nome, String email, String senha, String papel) {
+    public Usuario(int id, String nome, String email, String senha, Papel papel) {
         this.id = id;
         this.nome = nome;
         this.email = email;
@@ -47,11 +47,11 @@ public abstract class Usuario {
         this.senha = senha;
     }
 
-    public String getPapel() {
+    public Papel getPapel() {
         return papel;
     }
 
-    public void setPapel(String papel) {
+    public void setPapel(Papel papel) {
         this.papel = papel;
     }
 }

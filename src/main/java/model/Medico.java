@@ -4,9 +4,8 @@ import java.util.List;
 
 public class Medico extends Usuario{
     private String especialidade;
-    private List<Consulta> consultas;
 
-    public Medico(int id, String nome, String email, String senha, String papel, String especialidade) {
+    public Medico(int id, String nome, String email, String senha, Papel papel, String especialidade) {
         super(id, nome, email, senha, papel);
         this.especialidade = especialidade;
     }
