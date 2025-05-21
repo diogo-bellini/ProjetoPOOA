@@ -12,5 +12,6 @@
 </head>
 <body>
 <%--PAGINA DO USUARIO--%>
+<h1>Paciente</h1>
 </body>
 </html>

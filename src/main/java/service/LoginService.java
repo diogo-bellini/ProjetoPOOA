@@ -1,12 +1,21 @@
 package service;
 
+import dao.UsuarioDAO;
 import model.Usuario;
 
 public class LoginService {
-    public static Usuario autenticar(String login, String senha) {
-        Usuario usuario = null;
-        if (login.equals("admin") && senha.equals("admin")) {
 
+    private UsuarioDAO usuarioDAO;
+
+    public LoginService() {
+        this.usuarioDAO = new UsuarioDAO();
+    }
+
+    public Usuario autenticar(String email, String senha) {
+        if (email == null || senha == null || email.isEmpty() || senha.isEmpty()) {
+            return null;
         }
+
+        return usuarioDAO.buscarPorEmailESenha(email, senha);
     }
 }
